@@ -1,0 +1,50 @@
+{
+  "metadata" : {
+    "realm" : "/",
+    "amsterVersion" : "14.0.0",
+    "entityType" : "OAuth2Module",
+    "entityId" : "AmazonSocialAuthentication",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "AmazonSocialAuthentication",
+    "mixUpMitigation" : false,
+    "ssoProxyUrl" : "https://am5.theidentitycookbook.com:8443/openam/oauth2c/OAuthProxy.jsp",
+    "authenticationLevel" : 0,
+    "accountMapperClass" : "org.forgerock.openam.authentication.modules.common.mapping.JsonAttributeMapper",
+    "accountMapperConfiguration" : [ "id=user_id", "email=mail" ],
+    "oauth2LogoutServiceUrl" : null,
+    "anonymousUserName" : "anonymous",
+    "mailGatewayClass" : "org.forgerock.openam.authentication.modules.oauth2.DefaultEmailGatewayImpl",
+    "oauth2EmailAttribute" : "email",
+    "smtpHostName" : "localhost",
+    "smtpSslEnabled" : false,
+    "userProfileServiceUrl" : "https://api.amazon.com/user/profile",
+    "openidConnectContextValue" : "abc123",
+    "promptForPassword" : false,
+    "smtpFromAddress" : "info@forgerock.com",
+    "scope" : "profile",
+    "accessTokenParameterName" : "access_token",
+    "smtpHostPort" : "25",
+    "saveAttributesInSession" : true,
+    "openidConnectIssuer" : null,
+    "attributeMapperConfiguration" : [ "id=user_id", "email=mail" ],
+    "smtpUsername" : null,
+    "clientSecret" : null,
+    "openidConnectContextType" : "client_secret",
+    "authenticationEndpointUrl" : "https://www.amazon.com/ap/oa",
+    "accessTokenEndpointUrl" : "https://api.amazon.com/auth/o2/token ",
+    "clientId" : "",
+    "accountProviderClass" : "org.forgerock.openam.authentication.modules.common.mapping.DefaultAccountProvider",
+    "smtpPassword" : null,
+    "attributeMappingClasses" : [ "org.forgerock.openam.authentication.modules.common.mapping.JsonAttributeMapper" ],
+    "mapToAnonymousUser" : false,
+    "logoutBehaviour" : "prompt",
+    "createAccount" : true,
+    "_type" : {
+      "_id" : "oauth2",
+      "name" : "OAuth 2.0 / OpenID Connect",
+      "collection" : true
+    }
+  }
+}
